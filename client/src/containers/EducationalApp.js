@@ -3,6 +3,7 @@ import PageFooter from "../components/PageFooter";
 import HomePage from "./HomePage";
 import RegionsPage from "./RegionsPage";
 import ConservationPage from "./ConservationPage";
+import logo from "../img/bbc-logo.png";
 import { useState, useEffect } from 'react';
 import React from "react";
 import {
@@ -10,7 +11,7 @@ import {
   Routes,
   Route,
   Link
-} from "react-router-dom";
+} from "react-router-dom"; 
 
 const EducationalApp = () => {
 
@@ -24,35 +25,38 @@ const EducationalApp = () => {
 
     return (
         <>
-            <header>
+            <Router>
+            <header className="flex-column">
                 <div id="top-bar">
                     Login
                 </div>
                 <div id="main-header" className="flex-row">
-                    <div id="page-logo">Logo</div>
+                    <div id="page-logo" className="flex-row">
+                        <img id="logo" src={logo} alt="BBC"/>
+                        <h2>Education App</h2>
+                    </div>
                     <nav id="nav-bar">
-                        <Router>
-                            <ul>
-                                <li>
-                                    <Link to="/home">Home</Link>
-                                </li>
-                                <li>
-                                    <Link to="/regions">Regions</Link>
-                                </li>
-                                <li>
-                                    <Link to="/conservation">Conservation</Link>
-                                </li>
-                            </ul>
-                        <Routes>
-                            <Route path="/home" element={<HomePage/>}/>
-                            <Route path="/regions" element={<RegionsPage/>}/>
-                            <Route path="/conservation" element={<ConservationPage/>}/>
-                        </Routes>
-                        </Router>
+                        <ul className="flex-row">
+                            <li>
+                                <Link to="/home"><i className="fas fa-home"></i> Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/regions"><i className="fas fa-globe-americas"></i> Regions</Link>
+                            </li>
+                            <li>
+                                <Link to="/conservation" ><i className="fas fa-leaf"></i> Conservation</Link>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             </header>
+            <Routes>
+                <Route path="/home" element={<HomePage/>}/>
+                <Route path="/regions" element={<RegionsPage/>}/>
+                <Route path="/conservation" element={<ConservationPage/>}/>
+            </Routes>
           <PageFooter />
+          </Router>
         </>
       );
 }
