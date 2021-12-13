@@ -5,7 +5,7 @@ db.animals.insertMany([
     {
         "name" : "Dolphin",
         "region" : "ocean",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "carnivore",
         "population" : 600000,
         "status" : "endangered",
@@ -25,7 +25,7 @@ db.animals.insertMany([
     {
         "name" : "Orca",
         "region" : "ocean",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "carnivore",
         "population" : 50000,
         "status" : "endangered",
@@ -45,7 +45,7 @@ db.animals.insertMany([
     {
         "name" : "Blue Whale",
         "region" : "ocean",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "carnivore",
         "population" : 10000,
         "status" : "endangered",
@@ -65,7 +65,7 @@ db.animals.insertMany([
     {
         "name" : "Great White Shark",
         "region" : "ocean",
-        "class" : "fish",
+        "type" : "fish",
         "diet" : "carnivore",
         "population" : 3500,
         "status" : "endangered",
@@ -85,7 +85,7 @@ db.animals.insertMany([
     {
         "name" : "Starfish",
         "region" : "ocean",
-        "class" : "invertebrate",
+        "type" : "invertebrate",
         "diet" : "carnivore",
         "population" : 3500,
         "status" : "critically endangered",
@@ -106,7 +106,7 @@ db.animals.insertMany([
     {
         "name" : "Seal",
         "region" : "ocean",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "carnivore",
         "population" : 2000000,
         "status" : "abundant",
@@ -127,7 +127,7 @@ db.animals.insertMany([
     {
         "name" : "Squid",
         "region" : "ocean",
-        "class" : "invertebrate",
+        "type" : "invertebrate",
         "diet" : "carnivore",
         "population" : 4300000,
         "status" : "abundant",
@@ -147,7 +147,7 @@ db.animals.insertMany([
     {
         "name" : "Jellyfish",
         "region" : "ocean",
-        "class" : "invertebrate",
+        "type" : "invertebrate",
         "diet" : "omnivore",
         "population" : 9000000,
         "status" : "abundant",
@@ -167,7 +167,7 @@ db.animals.insertMany([
     {
         "name" : "Octopus",
         "region" : "ocean",
-        "class" : "invertebrate",
+        "type" : "invertebrate",
         "diet" : "carnivore",
         "population" : 9000000,
         "status" : "abundant",
@@ -187,7 +187,7 @@ db.animals.insertMany([
     {
         "name" : "Walrus",
         "region" : "ocean",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "carnivore",
         "population" : 250000,
         "status" : "stable",
@@ -207,7 +207,7 @@ db.animals.insertMany([
     {
         "name" : "Tuna",
         "region" : "ocean",
-        "class" : "fish",
+        "type" : "fish",
         "diet" : "carnivore",
         "population" : 1000000,
         "status" : "endangered",
@@ -228,7 +228,7 @@ db.animals.insertMany([
     {
         "name" : "Clown fish",
         "region" : "ocean",
-        "class" : "fish",
+        "type" : "fish",
         "diet" : "omnivore",
         "population" : 2000000,
         "status" : "abundant",
@@ -249,7 +249,7 @@ db.animals.insertMany([
     {
         "name" : "Barracuda",
         "region" : "ocean",
-        "class" : "fish",
+        "type" : "fish",
         "diet" : "carnivore",
         "population" : 1000000,
         "status" : "abundant",
@@ -270,7 +270,7 @@ db.animals.insertMany([
     {
         "name" : "Giant Tiger Prawn",
         "region" : "ocean",
-        "class" : "crustacean",
+        "type" : "crustacean",
         "diet" : "omnivore",
         "population" : 1500000,
         "status" : "stable",
@@ -290,7 +290,7 @@ db.animals.insertMany([
     {
         "name" : "Sea turtle",
         "region" : "ocean",
-        "class" : "reptile",
+        "type" : "reptile",
         "diet" : "herbivore",
         "population" : 8000,
         "status" : "critically endangered",
@@ -310,7 +310,7 @@ db.animals.insertMany([
     {
         "name" : "Manta ray",
         "region" : "ocean",
-        "class" : "fish",
+        "type" : "fish",
         "diet" : "carnivore",
         "population" : 1500,
         "status" : "endangered",
@@ -330,7 +330,7 @@ db.animals.insertMany([
     {
         "name" : "Black howler monkey",
         "region" : "rainforest",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "herbivore",
         "population" : 100000,
         "status" : "endangered",
@@ -350,7 +350,7 @@ db.animals.insertMany([
     {
         "name" : "Silverback Gorilla",
         "region" : "rainforest",
-        "class" : "primate",
+        "type" : "primate",
         "diet" : "herbivore",
         "population" : 1000,
         "status" : "critically endangered",
@@ -370,7 +370,7 @@ db.animals.insertMany([
     {
         "name" : "Giant anteater",
         "region" : "rainforest",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "carnivore",
         "population" : 5000,
         "status" : "endangered",
@@ -390,7 +390,7 @@ db.animals.insertMany([
     {
         "name" : "Ocelot",
         "region" : "rainforest",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "carnivore",
         "population" : 1500000,
         "status" : "endangered",
@@ -410,7 +410,7 @@ db.animals.insertMany([
     {
         "name" : "Orangutan",
         "region" : "rainforest",
-        "class" : "primate",
+        "type" : "primate",
         "diet" : "herbivore",
         "population" : 105000,
         "status" : "endangered",
@@ -430,7 +430,7 @@ db.animals.insertMany([
     {
         "name" : "Pangolin",
         "region" : "rainforest",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "carnivore",
         "population" : 50000,
         "status" : "critically endangered",
@@ -450,7 +450,7 @@ db.animals.insertMany([
     {
         "name" : "Lowland tapir",
         "region" : "rainforest",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "omnivore",
         "population" : 2500,
         "status" : "endangered",
@@ -470,7 +470,7 @@ db.animals.insertMany([
     {
         "name" : "Slender loris",
         "region" : "rainforest",
-        "class" : "primate",
+        "type" : "primate",
         "diet" : "omnivore",
         "population" : 1500,
         "status" : "endangered",
@@ -490,7 +490,7 @@ db.animals.insertMany([
     {
         "name" : "Jaguar",
         "region" : "rainforest",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "carnivore",
         "population" : 64000,
         "status" : "endangered",
@@ -510,7 +510,7 @@ db.animals.insertMany([
     {
         "name" : "Green anaconda",
         "region" : "rainforest",
-        "class" : "reptile",
+        "type" : "reptile",
         "diet" : "carnivore",
         "population" : 40000,
         "status" : "stable",
@@ -530,7 +530,7 @@ db.animals.insertMany([
     {
         "name" : "Poison dart frog",
         "region" : "rainforest",
-        "class" : "amphibian",
+        "type" : "amphibian",
         "diet" : "carnivore",
         "population" : 100000,
         "status" : "endangered",
@@ -550,7 +550,7 @@ db.animals.insertMany([
     {
         "name" : "Scarlet Macaw",
         "region" : "rainforest",
-        "class" : "bird",
+        "type" : "bird",
         "diet" : "herbivore",
         "population" : 50000,
         "status" : "stable",
@@ -570,7 +570,7 @@ db.animals.insertMany([
     {
         "name" : "Capybara",
         "region" : "rainforest",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "herbivore",
         "population" : 500000,
         "status" : "stable",
@@ -590,7 +590,7 @@ db.animals.insertMany([
     {
         "name" : "Blue morpho butterfly",
         "region" : "rainforest",
-        "class" : "insect",
+        "type" : "insect",
         "diet" : "herbivore",
         "population" : 1000000,
         "status" : "endangered",
@@ -610,7 +610,7 @@ db.animals.insertMany([
     {
         "name" : "Sloth",
         "region" : "rainforest",
-        "class" : "mammal",
+        "type" : "mammal",
         "diet" : "herbivore",
         "population" : 10000,
         "status" : "endangered",
@@ -630,7 +630,7 @@ db.animals.insertMany([
     {
         "name" : "Python",
         "region" : "rainforest",
-        "class" : "reptile",
+        "type" : "reptile",
         "diet" : "carnivore",
         "population" : 300000,
         "status" : "endangered",
@@ -650,7 +650,7 @@ db.animals.insertMany([
     {
         "name" : "Boa constrictor",
         "region" : "rainforest",
-        "class" : "reptile",
+        "type" : "reptile",
         "diet" : "carnivore",
         "population" : 300000,
         "status" : "stable",
