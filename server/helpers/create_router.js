@@ -8,7 +8,7 @@ const createRouter = function(collection) {
         collection
         .find ()
         .toArray()
-        .then((docs)=>rescape.json(docs))
+        .then((docs)=>res.json(docs))
         .catch((err) => {
             console.error(err);
             res.status(500);
