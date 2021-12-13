@@ -3,8 +3,42 @@ import ocean from "../img/ocean.jpeg";
 import plains from "../img/plains.jpeg";
 import rainforest from "../img/rainforest.jpeg";
 import tundra from "../img/tundra.jpeg";
+import Slideshow from "../components/Slideshow";
+
+
 
 const HomePage = ({allAnimals}) => {
+
+    const data = [
+        {
+          image: desert,
+          caption: "Desert"
+        },
+        {
+          image: ocean,
+          caption: "Ocean"
+        },
+        {
+          image: plains,
+          caption: "Plains"
+        },
+        {
+          image: rainforest,
+          caption: "Rainforest"
+        },
+        {
+          image: tundra,
+          caption: "Tundra"
+        }
+      ];
+      const captionStyle = {
+        fontSize: '2em',
+        fontWeight: 'bold',
+      }
+      const slideNumberStyle = {
+        fontSize: '20px',
+        fontWeight: 'bold',
+      }
     
     const generateRandomIndex = (lengthOfArray) => {
         return Math.floor(Math.random() * lengthOfArray)
@@ -41,6 +75,7 @@ const HomePage = ({allAnimals}) => {
     return (
         <div className="flex-column">
             <div id="region-images-carousel">
+                    <Slideshow data={data} captionStyle={captionStyle} slideNumberStyle={slideNumberStyle}/>
             </div>
             <div id="random-species-section">
                 <ul id="random-species-list">
