@@ -16,6 +16,7 @@ import {
 const EducationalApp = () => {
 
     const [allAnimals, setAllAnimals] = useState([])
+    const [allRegions, setAllRegions] = useState(["tundra", "desert", "ocean", "plains", "rainforest"])
 
     useEffect(() => {
         fetch("http://localhost:5000/api/animals")
@@ -51,8 +52,8 @@ const EducationalApp = () => {
                 </div>
             </header>
             <Routes>
-                <Route path="/home" element={<HomePage/>}/>
-                <Route path="/regions" element={<RegionsPage/>}/>
+                <Route path="/home" element={<HomePage allAnimals={allAnimals}/>}/>
+                <Route path="/regions" element={<RegionsPage allAnimals={allAnimals}/>}/>
                 <Route path="/conservation" element={<ConservationPage/>}/>
             </Routes>
           <PageFooter />
