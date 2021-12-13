@@ -8,7 +8,7 @@ app.use(cors())
 app.use(express.json());
 
 
-MongoClient.connect('mongodb://localhost:27017', {useUnifiedTopology: true})
+MongoClient.connect('mongodb://127.0.0.1:27017', {useUnifiedTopology: true})
   .then((client) => {
     const db = client.db('educational_project');
     const animalsCollection = db.collection('animals');
