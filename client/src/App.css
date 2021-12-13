@@ -133,4 +133,12 @@ footer {
   padding: 0.5rem;
   font-weight: bold;
   font-size: larger;
+=======
+#region-list {
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+#filtered-animal-list {
+  flex-wrap: wrap;
 }

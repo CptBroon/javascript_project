@@ -3,6 +3,7 @@ import AnimalCard from "../components/AnimalCard";
 
 const RegionsPage = ({allAnimals, allRegions}) => {
     const [regionalAnimals, setRegionalAnimals] = useState([]);
+    const [listFiltered, setListFiltered] = useState(false);
     
     const handleFilterClick = (e) => {
         const filteredList = []
@@ -12,6 +13,9 @@ const RegionsPage = ({allAnimals, allRegions}) => {
             }
         })
         setRegionalAnimals(filteredList)
+        if (!listFiltered) {
+            setListFiltered(true)
+        }
     }
 
     const createRegionLink = (region) => {
@@ -39,19 +43,18 @@ const RegionsPage = ({allAnimals, allRegions}) => {
 
     return (
         <>
-        <h1> Regions </h1>
-        <ul>
-            {generateRegionList(allRegions)}
-        </ul>
-        <p>i </p>
-        <h2> List of all animals by selected region </h2>
-        {generateRegionalAnimalList(regionalAnimals)}
+            <h1> Regions </h1>
+            <ul id="region-list" className="flex-row">
+                {generateRegionList(allRegions)}
+            </ul>
+            {listFiltered && <div id="filtered-list">
+                <h3> List of all animals by selected region </h3>
+                <ul id="filtered-animal-list" className="flex-row">
+                    {generateRegionalAnimalList(regionalAnimals)}
+                </ul>
+            </div>}
         </>
     )
-    // return list of animals for each region
-    //takes an argument / props of region, and return animals
-    // filter for region
-    //each list item is a clickable link which takes you to the animal card
 }
 
 export default RegionsPage;
