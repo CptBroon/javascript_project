@@ -53,7 +53,7 @@ const EducationalApp = () => {
             </header>
             <Routes>
                 <Route path="/home" element={<HomePage allAnimals={allAnimals}/>}/>
-                <Route path="/regions" element={<RegionsPage allAnimals={allAnimals}/>}/>
+                <Route path="/regions" element={<RegionsPage allRegions={allRegions} allAnimals={allAnimals}/>}/>
                 <Route path="/conservation" element={<ConservationPage/>}/>
             </Routes>
           <PageFooter />

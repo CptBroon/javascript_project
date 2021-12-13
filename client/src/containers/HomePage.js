@@ -32,18 +32,18 @@ const HomePage = ({allAnimals}) => {
     }
     
     const generateRandomAnimalsGrid = () => {
-        const animals = generateRandomAnimalList(6, allAnimals)
-        return animals.map(createAnimalCard) 
+        if (allAnimals.length) {
+            const animals = generateRandomAnimalList(6, allAnimals)
+            return animals.map(createAnimalCard) 
+        }
     }
-
-    if (!allAnimals.length) return "loading..."
 
     return (
         <div className="flex-column">
             <div id="region-images-carousel">
             </div>
-            <div id="random-species-grid">
-                <ul>
+            <div id="random-species-section">
+                <ul id="random-species-list">
                     {generateRandomAnimalsGrid()}
                 </ul>
             </div>

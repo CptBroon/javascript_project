@@ -60,3 +60,21 @@ footer {
 #page-logo {
   align-items: center;
 }
+
+#random-species-list {
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid: auto / 32% 32% 32%;
+  gap: 2rem 2%;
+  list-style: none;
+  padding: 0;
+}
+
+.animal-card {
+  text-align: center;
+  background-color: red;
+  border-radius: 15px;
+  padding: 3rem;
+  text-align: center;
+}

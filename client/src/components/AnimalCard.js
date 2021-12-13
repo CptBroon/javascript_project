@@ -1,12 +1,12 @@
 //receives single animal object as json, it can show animal.name etc
 
 
-const AnimalCard = ({newList}) =>{
+const AnimalCard = ({animal}) =>{
 
     return (
     <> 
-    <h1>Name: {newList.name}</h1>
-    <p>Type: {newList.type}</p>
+    <p>Name: {animal.name}</p>
+    <p>Type: {animal.type}</p>
 
 
      </>
