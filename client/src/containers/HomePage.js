@@ -1,33 +1,26 @@
-import desert from "../img/desert.jpeg";
-import ocean from "../img/ocean.jpeg";
-import plains from "../img/plains.jpeg";
-import rainforest from "../img/rainforest.jpeg";
-import tundra from "../img/tundra.jpeg";
 import Slideshow from "../components/Slideshow";
-
-
 
 const HomePage = ({allAnimals}) => {
 
     const data = [
         {
-          image: desert,
+          image: "/img/desert.jpeg",
           caption: "Desert"
         },
         {
-          image: ocean,
+          image: "/img/ocean.jpeg",
           caption: "Ocean"
         },
         {
-          image: plains,
+          image: "/img/plains.jpeg",
           caption: "Plains"
         },
         {
-          image: rainforest,
+          image: "/img/rainforest.jpeg",
           caption: "Rainforest"
         },
         {
-          image: tundra,
+          image: "/img/tundra.jpeg",
           caption: "Tundra"
         }
       ];

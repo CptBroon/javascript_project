@@ -22,7 +22,7 @@ const ConservationPage = () => {
             the world’s most ecologically, economically, and culturally important species—the survival of
             which are threatened by poaching, illegal trade and habitat loss. We use the best science available
             to link on-the-ground work with high-level policy action to create lasting solutions that benefit
-            wild animals as well as the people that live alongside them.
+            wild animals as well as the people that live alongside them.</p>
         <h2> OUR COLLECTIVE EFFORTS AND OUTCOMES</h2>
         <p>Conserving wildlife is at heart of our mission. We focus on protecting populations of some of the world’s
             most ecologically, economically, and culturally important species—the survival of which are threatened
