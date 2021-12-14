@@ -643,8 +643,8 @@ db.animals.insertMany([
             "There are 41 different types, or species, of pythons. This makes them one of the largest families of snakes in the entire world."
         ],
         "images": [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsavL_mY8UhVmkjLYgZQM4lVgc17_ufBFkNw&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJncot_7ngUaFjAxBgLP6vdcrn-tth_QZo6Q&usqp=CAU"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJncot_7ngUaFjAxBgLP6vdcrn-tth_QZo6Q&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsavL_mY8UhVmkjLYgZQM4lVgc17_ufBFkNw&usqp=CAU"
         ]
     },
     {
@@ -676,8 +676,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 20,
         weight: 900000,
-        body_length: 2000,
-        top_speed: 56,
+        "body-length": 2000,
+        "top-speed": 56,
         facts: [
             "Bison are more agile than their size would suggest - they can jump fences, swim well, and spin around quickly.",
             "Bison are nearsighted, but they have excellent senses of smell and hearing.",
@@ -690,7 +690,7 @@ db.animals.insertMany([
             "Bison were almost extinct, with only around 325 reamining in 1884.",
             "Both male and female bisons have horns."
         ],
-        images: ["shorturl.at/kuxAQ", "shorturl.at/iqzOZ", "shorturl.at/krwC5", "shorturl.at/ejAP2", "shorturl.at/uAU36"]
+        images: ["https://i.natgeofe.com/k/556d79a8-3d06-4755-9195-57a69a90353a/bison-closeup-head_4x3.jpg", "https://www.doi.gov/sites/doi.gov/files/styles/social_media_1200x627/public/blog-post/thumbnail-images/rocky_mtn_aresenal_nwr_rich_keen_dpra_bison_and_calf.jpg?itok=i9lNZ5AP"]
     },
     {
         name: "African Elephant",
@@ -701,8 +701,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 70,
         weight: 6000000,
-        body_length: 3000,
-        top_speed: 40,
+        "body-length": 3000,
+        "top-speed": 40,
         facts: [
             "The African Elephant is the world's largest land mammal.",
             "Elephants are constantly eating, because they need up to 150kg of food per day - that's around 375 tins of baked beans.",
@@ -715,7 +715,7 @@ db.animals.insertMany([
             "Elephants are able to recognise themselves using mirrors. Such displays of self-recognition indicates a very high level of awareness, and is something which only humans, apes, cetaceans and magpies are otherwise known to do.",
             "Elephants are able to recognise and distinguish human voices. They can tell the difference between human languages, male and female voices, friendly voices and those associated with danger."
         ],
-        images: ["shorturl.at/foEI1", "shorturl.at/jqIQ0", "shorturl.at/ivSX4", "shorturl.at/bBQTV", "shorturl.at/lpsFR"]
+        images: ["https://images.theconversation.com/files/276816/original/file-20190528-42565-19e5tz1.jpg?ixlib=rb-1.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip", "http://c.files.bbci.co.uk/1124E/production/_108522207_gettyimages-1142653052.jpg"]
     },
     {
         name: "Lion",
@@ -726,8 +726,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 15,
         weight: 180000,
-        body_length: 2000,
-        top_speed: 80,
+        "body-length": 2000,
+        "top-speed": 80,
         facts: [
             "Only slightly smaller than the Siberian tiger, the lion is the second largest big cat, with a muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail.",
             "Lions are the most sociable of all the big cats. They live in groups called prides, which usually consist of related females and their offspring. The typical pride consists of ten to fifteen lions, with several adult females, their cubs and up to four males. Some lion prides can be as large as 40 members!",
@@ -740,7 +740,7 @@ db.animals.insertMany([
             'Lions communicate in different ways using sounds like roars, growls, moans, and grunts. Also, by leaving scent markings and through visual signals, such as the darkness of the mane. They also rub their heads on one another as an act of bonding and to spread the "family scent".',
             "The average lion will spend between 16 and 20 hours a day just resting or sleeping. It’s because they do not have many sweat glands so in order to conserve energy, lions will just lie about and watch the world unfold around them. They are more active at night when it is cooler although they do conduct most of their hunting activity during the day."
         ],
-        images: ["shorturl.at/pFGIL", "shorturl.at/mIXZ2", "shorturl.at/yJNS8", "shorturl.at/iswW2", "shorturl.at/emrxV"]
+        images: ["https://cdn.mos.cms.futurecdn.net/J9KeYkEZf4HHD5LRGf799N.jpg", "https://lionalert.org/wp-content/uploads/2020/04/African-Lion-Cubs-1.jpg"]
     },
     {
         name: "Cheetah",
@@ -751,8 +751,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 14,
         weight: 70000,
-        body_length: 1000,
-        top_speed: 130,
+        "body-length": 1000,
+        "top-speed": 130,
         facts: [
             "Cheetahs are the fastest land animal in the world. Due to the energy required to run at such speed, cheetahs can only maintain a chase for between 200 – 300m. If a hunt isn’t successful after 1 min, they usually stop to rest.",
             "Unlike big cats like the lion, cheetahs are unable to roar. They are closer to your domestic house cat in that they can purr, both inhaling and exhaling.",
@@ -765,7 +765,7 @@ db.animals.insertMany([
             "Cheetahs have been around for a very, very long time. Sumerians trained cheetahs for hunting back in 3000 BC.",
             "Cheetah cubs have a shockingly high mortality rate. One study in the 90’s the Serengeti found that 95% of cubs died before reaching adulthood. Many deaths were due to Lions, but also other predators and disease."
         ],
-        images: ["shorturl.at/bvEW9", "shorturl.at/fqsJ2", "shorturl.at/bACO9", "shorturl.at/yQ123", "shorturl.at/hzA03"]
+        images: ["https://img.etimg.com/thumb/msid-44303229,width-650,imgsize-129520,,resizemode-4,quality-100/.jpg", "https://adultpaintbynumber.com/wp-content/uploads/2020/08/cute-baby-cheetah-paint-by-number.jpg"]
     },
     {
         name: "Giraffe",
@@ -776,8 +776,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 26,
         weight: 1192000,
-        body_length: 5700,
-        top_speed: 60,
+        "body-length": 5700,
+        "top-speed": 60,
         facts: [
             "Giraffes are the tallest mammals on Earth. Their legs alone are taller than many humans.",
             "A giraffe's neck is too short to reach the ground. As a result, it has to awkwardly spread its front legs or kneel to reach the ground for a drink of water.",
@@ -790,7 +790,7 @@ db.animals.insertMany([
             "Giraffes are very social animals and roam around in groups. These groups, called towers, typically have around 15 members led by an adult male. The other members are females and young males.",
             "Male giraffes (called bulls) swing their long necks and butt heads to see who is stronger. This is known as “necking“ and most giraffes don’t get hurt doing it. Eventually one male will give up and walk away, probably to eat."
         ],
-        images: ["shorturl.at/xAF35", "shorturl.at/arzNT", "shorturl.at/nEQ78", "shorturl.at/rzFS2", "shorturl.at/zBNOT"]
+        images: ["https://static01.nyt.com/images/2021/04/03/multimedia/03xp-april/merlin_185893383_8e41433f-4a32-4b1e-bf02-457290d0d534-superJumbo.jpg", "https://s.abcnews.com/images/US/giraffe-baby-01-ht-jc-190503_hpMain_16x9_992.jpg"]
     },
     {
         name: "Hippopotamus",
@@ -801,8 +801,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 50,
         weight: 1500000,
-        body_length: 5000,
-        top_speed: 48,
+        "body-length": 5000,
+        "top-speed": 48,
         facts: [
             "Hippos can’t swim or float! They walk or stand on surfaces below the water like sandbanks. Even so, they spend most of the day in water to protect their sensitive skin from the sun.",
             "If you’ve ever seen a hippo basking in the sun, you may have noticed what seems to be blood dripping from their skin. There is no need to be alarmed though, this substance is, in fact, a built-in “Hippo Sunblock” which is oily and red in colour. It not only provides much-needed protection from the sun’s rays, but is also an effective moisturiser and germ-killer, too.",
@@ -815,7 +815,7 @@ db.animals.insertMany([
             "Hippos usually live in groups (or “herds”) of around ten to 20 individuals, led by one large dominant male. The other members are females, their young and a few young non-breeding males.",
             "Female hippos, called cows, give birth every two years, usually to a single calf. Soon after birth, the mother and her baby join up with other cows and calves for protection against predators, such as crocodiles, lions and hyenas."
         ],
-        images: ["shorturl.at/klJKV", "shorturl.at/bqBU4", "shorturl.at/gFW23", "shorturl.at/asxE9", "shorturl.at/tIPR0"]
+        images: ["https://files.worldwildlife.org/wwfcmsprod/images/Hippos_Hero/story_full_width/1tujlsdjl3_Medium_WW1113453.jpg", "https://th-thumbnailer.cdn-si-edu.com/yahMqtxzqZ7sex_wIzh1Vh3l2Bk=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/d2/74/d274dc2a-5c1e-46cb-be97-2e34119b06d4/42-18442164.jpg"]
     },
     {
         name: "Wild Turkey",
@@ -826,8 +826,8 @@ db.animals.insertMany([
         status: "abundant",
         lifespan: 5,
         weight: 11000,
-        body_length: 1400,
-        top_speed: 88,
+        "body-length": 1400,
+        "top-speed": 88,
         facts: [
             "Adult male turkeys are called toms and females are called hens. Very young birds are poults and adolescents are called jakes.",
             "The wild turkey’s bald head can change color in seconds with excitement or emotion. The birds’ heads can be red (pink), white, or blue.",
@@ -840,7 +840,7 @@ db.animals.insertMany([
             "Turkeys have three-times better vision than humans. They can also see in color and their eyesight covers 270 degrees.",
             "The English name “turkey” derives from historic shipping routes that passed through the country of Turkey on their way to delivering the birds to European markets."
         ],
-        images: ["shorturl.at/bfvBL", "shorturl.at/ghkyL", "shorturl.at/grAI7", "shorturl.at/vyO16", "shorturl.at/qAOS3"]
+        images: ["https://cdn.download.ams.birds.cornell.edu/api/v1/asset/311368611/900", "https://petkeen.com/wp-content/uploads/2021/08/Female-Wild-Turkeys.jpg"]
     },
     {
         name: "Capybara",
@@ -851,8 +851,8 @@ db.animals.insertMany([
         status: "abundant",
         lifespan: 10,
         weight: 66000,
-        body_length: 1300,
-        top_speed: 33,
+        "body-length": 1300,
+        "top-speed": 33,
         facts: [
             "Capybaras are the world’s largest rodent. Females of this species are slightly larger than males.",
             "Their fur is coarse and thin, and is reddish brown over most of the body, turning yellowish brown on the belly and sometimes black on the face.",
@@ -865,7 +865,7 @@ db.animals.insertMany([
             "In the 16th century, the Catholic Church classified the capybara, which can swim, as a fish so that the meat could be eaten on Fridays and during Lent.",
             "The scientific name for capybara comes from Hydro chaeris, which means “water hog” in Greek."
         ],
-        images: ["shorturl.at/pwDM1", "shorturl.at/hwyJ1", "shorturl.at/kzKM6", "shorturl.at/mqLQ6", "shorturl.at/ruwB3"]
+        images: ["https://cdn.britannica.com/79/191679-050-C7114D2B/Adult-capybara.jpg", "https://i.guim.co.uk/img/media/1c67d0f569d31e92e40aa988886d021b9e3b8cf9/0_80_2348_1409/master/2348.jpg?width=1200&quality=85&auto=format&fit=max&s=cb00b04fdf71654e728948615ef29b20"]
     },
     {
         name: "Quokka",
@@ -876,8 +876,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 10,
         weight: 5000,
-        body_length: 500,
-        top_speed: 32,
+        "body-length": 500,
+        "top-speed": 32,
         facts: [
             "Like their kangaroo relatives, quokkas move around by hopping and bounding, or moving forward using their hands.",
             "You mainly see quokkas on the ground, but unlike their bigger 'roo cousins, quokkas can climb trees if they need to – with heights of up to 2 metres! Mainly, they do it to get food.",
@@ -890,7 +890,7 @@ db.animals.insertMany([
             "Like kangaroos, baby quokkas have also been given the name ‘joeys.’ Quokkas only have one baby at a time (they arrive around 27 days after mating), and when born, they ride around in their mother’s pouch – usually about six months before they venture off on their own.",
             "Despite their sweet and friendly nature, quokkas have a survival instinct that’s pretty nasty: If a mother is being pursued by a predator, she’ll sacrifice her baby to save herself."
         ],
-        images: ["shorturl.at/hkETY", "shorturl.at/azKLQ", "shorturl.at/gmC04", "shorturl.at/wBV03", "shorturl.at/cjELX"]
+        images: ["https://bestlifeonline.com/wp-content/uploads/sites/3/2019/07/what-is-quokka.jpg?fit=1200%2C800&ssl=1", "https://live-production.wcms.abc-cdn.net.au/119e113a1102ce984df0b3d77972931b?impolicy=wcms_crop_resize&cropH=808&cropW=1080&xPos=0&yPos=401&width=862&height=647"]
     },
     {
         name: "Bald Eagle",
@@ -901,8 +901,8 @@ db.animals.insertMany([
         status: "abundant",
         lifespan: 20,
         weight: 6000,
-        body_length: 900,
-        top_speed: 160,
+        "body-length": 900,
+        "top-speed": 160,
         facts: [
             "They aren't really bald. The name comes from an old English word from centuries ago:  Piebald, which is defined as “having irregular patches of two colors, typically black and white.”",
             "Their average life span in the wild is 20 years, but the oldest recorded bird was 38! Captive individuals have been known to live longer, with one eagle almost reaching the age of 50.",
@@ -915,7 +915,7 @@ db.animals.insertMany([
             "Bald Eagle courtship can be pretty dramatic, with many elaborate calls and flight displays. But the craziest part involves the birds flying high into the sky, locking talons, and free-falling and spinning together, releasing right before they hit the ground.",
             "During the winter months, when eagles aren’t protecting a breeding territory and food is scarce, they are known to gather in large numbers."
         ],
-        images: ["shorturl.at/ktMU6", "shorturl.at/nsDGY", "shorturl.at/hrvC6", "shorturl.at/bsSV0", "shorturl.at/cCS59"]
+        images: ["https://i.guim.co.uk/img/media/6485636ee218b40f873a1372ecb1ac1f84458841/0_340_5100_3060/master/5100.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=17eeacc04d849c81ea102095a98fa600", "https://nas-national-prod.s3.amazonaws.com/web_h_p1_4047_1_bald-eagle_bonnie_block_kk-adult.jpg"]
     },
     {
         name: "Honey Badger",
@@ -926,8 +926,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 8,
         weight: 15000,
-        body_length: 800,
-        top_speed: 30,
+        "body-length": 800,
+        "top-speed": 30,
         facts: [
             "Honey Badgers are not actually badgers. They don’t even really resemble badgers. In appearance they are more like an overgrown weasel, just with a really cute tail and an adorable little face.",
             "For such a small animal honey badgers have enormous brains. They are capable of tricking their captors and escaping any man-made trap. They are one of very few non-primates known to manufacture and use tools. For example, they will roll fallen tree branches into position so they can climb to a food source. If they can’t dig under an obstacle, they will build ladders to get over it.",
@@ -940,7 +940,7 @@ db.animals.insertMany([
             "Despite their solitary nature, honey badgers do like a lot of motherly affection. There is no definitive age at which a youngster leaves home.",
             "Honey badgers are born without the ability to see. Newborns are completely hairless and can’t open their eyes. Mothers must grab their offspring and carry them around in their mouth. Even in adult life they have poor eyesight, although this is compensated for by a keen sense of smell."
         ],
-        images: ["shorturl.at/tFGLY", "shorturl.at/sJRW7", "shorturl.at/lGHJ9", "shorturl.at/oCV01", "shorturl.at/xAI13"]
+        images: ["https://www.openaccessgovernment.org/wp-content/uploads/2020/11/dreamstime_l_22403306.jpg", "https://a-z-animals.com/media/animals/images/original/honey_badger.jpg"]
     },
     {
         name: "Alpaca",
@@ -951,8 +951,8 @@ db.animals.insertMany([
         status: "abundant",
         lifespan: 20,
         weight: 84000,
-        body_length: 1000,
-        top_speed: 56,
+        "body-length": 1000,
+        "top-speed": 56,
         facts: [
             "There are no wild alpacas – the alpaca is the domesticated version of the vicuña.",
             "Alpaca fiber is pretty much the most amazing natural fiber on earth. It’s been described as finer than cashmere, smoother than silk, softer than cotton, warmer than goose down, and more breathable than thermal knit.",
@@ -965,7 +965,7 @@ db.animals.insertMany([
             "Shortly after their first birthday, female alpacas are ready to become mothers. Males, however, take longer to mature and aren’t usually ready to breed until they are roughly twice as old.",
             "Female alpacas instinctively give birth between approximately 10:00 am and 2:00 pm. While that’s certainly more convenient for the people who raise alpacas, the real reason is that the new alpaca mother wants to be sure that her newborn, called a cria, has time to dry off, stand up, and suckle milk before the temperature drops."
         ],
-        images: ["shorturl.at/prwJ0", "shorturl.at/grEO6", "shorturl.at/guzY2", "shorturl.at/cnvyD", "shorturl.at/oyzH9"]
+        images: ["https://cdn.britannica.com/64/158064-050-1524E1FF/Alpacas.jpg", "https://upload.wikimedia.org/wikipedia/commons/d/db/Alpaca_%2831562329701%29.jpg"]
     },
     {
         name: "Mallard",
@@ -976,8 +976,8 @@ db.animals.insertMany([
         status: "abundant",
         lifespan: 10,
         weight: 1500,
-        body_length: 500,
-        top_speed: 88,
+        "body-length": 500,
+        "top-speed": 88,
         facts: [
             "Males and females look very different. Only the male mallards have the iridescent green head feathers, white “collar” on the neck and dark brown breast. The females are comparatively drab, with mottled brown and tan plumage all over.",
             "Male mallards don’t sound much like what we think ducks sound like. They don’t quack, and instead produce deeper, raspier one- and two-note calls. They can also make rattling sounds by rubbing their bills against their flight feathers. The females make the stereotypical quack.",
@@ -990,7 +990,7 @@ db.animals.insertMany([
             "Ducklings are almost exclusively insect eaters, only turning to a mainly vegetarian diet as they get older.",
             "A duck doesn’t feed her brood, as they are capable of finding their own food as soon as they leave the nest."
         ],
-        images: ["shorturl.at/huKO6", "shorturl.at/mrtHM", "shorturl.at/lBCPY", "shorturl.at/izBP7", "shorturl.at/dvwIW"]
+        images: ["https://i.natgeofe.com/k/327b01e8-be2e-4694-9ae9-ae7837bd8aea/mallard-male-swimming_4x3.jpg", "https://nas-national-prod.s3.amazonaws.com/styles/api_hero_bird_with_crop_1920_1200/public/birds/hero_image/Mallard16_Karen%2520Bonsell_KY_2012_GBBC_KK.jpg?tok=1626941160"]
     },
     {
         name: "Burrowing Owl",
@@ -1001,8 +1001,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 8,
         weight: 150,
-        body_length: 250,
-        top_speed: 60,
+        "body-length": 250,
+        "top-speed": 60,
         facts: [
             "Burrowing owls are some of the smallest owls around.",
             "Unlike the Great Horned owl, these owls lack ear tufts, giving their heads a somewhat comical, round appearance.",
@@ -1015,7 +1015,7 @@ db.animals.insertMany([
             "Burrowing owls are pretty animated performers during rain showers. It’s been reported that these owls get so excited when it rains that they’ve been reported to run around and flap their wings, stretch, and shake their feathers.",
             "Instead of flying away like other birds when they are disturbed, they often run away or flatten themselves along the ground."
         ],
-        images: ["shorturl.at/gyFX6", "shorturl.at/nwCO9", "shorturl.at/fvyRT", "shorturl.at/akIM1", "shorturl.at/psPU4"]
+        images: ["https://www.gannett-cdn.com/-mm-/94489f8e1fdb5c064ec36faec7eb2a31acf437e4/c=0-172-2160-1387/local/-/media/Tallahassee/2014/10/30/burrowing-owls.jpg?width=2160&height=1215&fit=crop&format=pjpg&auto=webp", "https://www.allaboutbirds.org/guide/assets/og/75296731-1200px.jpg"]
     },
     {
         name: "Ostrich",
@@ -1026,8 +1026,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 50,
         weight: 140000,
-        body_length: 2800,
-        top_speed: 70,
+        "body-length": 2800,
+        "top-speed": 70,
         facts: [
             "The flightless ostrich is the world’s largest bird.",
             "Ostriches’ wings reach a span of about 2 metres and are used in mating displays, to shade chicks, to cover the naked skin of the upper legs and flanks to conserve heat, and as “rudders” to help them change direction while running.",
@@ -1040,7 +1040,7 @@ db.animals.insertMany([
             "Ostriches have three stomachs.",
             "The ostrich has the largest eye of any land animal, measuring almost 5 cm across, allowing predators such as lions to be seen at long distances."
         ],
-        images: ["shorturl.at/lsJX4", "shorturl.at/wMTZ0", "shorturl.at/pIV29", "shorturl.at/hsFLR", "shorturl.at/qAQW9"]
+        images: ["https://upload.wikimedia.org/wikipedia/commons/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg", "https://www.macmillandictionary.com/external/slideshow/full/Ostrich_full.jpg"]
     },
     {
         name: "Praire Falcon",
@@ -1051,8 +1051,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 15,
         weight: 1000,
-        body_length: 400,
-        top_speed: 120,
+        "body-length": 400,
+        "top-speed": 120,
         facts: [
             "Prairie Falcons nest on overhanging cliffs that can be up to 500 feet (152 meters) high.",
             "Prairie Falcons sometimes bathe in river shallows, but dust-bathing is probably more common than water-bathing, because of the general scarcity of standing water in its habitat.",
@@ -1065,7 +1065,7 @@ db.animals.insertMany([
             "Young prairie falcons are called eyas and eyass.",
             "Prairie falcons are the most famous falconry birds used for falconry in the United States, but they are not suitable pets. They are aggressive birds, who need to be looked after by someone with high levels of expertise if they are kept in captivity."
         ],
-        images: ["shorturl.at/czDU0", "shorturl.at/amzZ0", "shorturl.at/nyFLO", "shorturl.at/bovyC", "shorturl.at/zV458"]
+        images: ["https://cdn.download.ams.birds.cornell.edu/api/v1/asset/303622291/1800", "https://nas-national-prod.s3.amazonaws.com/h_prairie-falcon_004_shutterstock_1220666524_adult_jaypierstorff.jpg"]
     },
     {
         name: "White Rhinoceros",
@@ -1076,8 +1076,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 50,
         weight: 2500000,
-        body_length: 4000,
-        top_speed: 50,
+        "body-length": 4000,
+        "top-speed": 50,
         facts: [
             "A common misconception about rhinos is that white rhinos are white and black rhinoceroses are black. Actually, the word “white” is merely a mispronunciation by English settlers in South Africa of a Dutch word, “wijd,” or wide. The white rhinoceros was described as “wijd” because it has wider lips than the black rhino with its prehensile upper lip. The black rhino gets its name because it’s usually seen covered in mud. Both white and black rhinos are grey.",
             "White rhinos have notoriously poor eyesight. As a result, it has long, tubular ears that swivel independently. This is important because it frequently has its head down while grazing.",
@@ -1090,7 +1090,7 @@ db.animals.insertMany([
             "Rhino horns are not made of bone like cattle. Their horns are made from keratin, the same protein that makes up human fingernails and hair.",
             "The modern rhinoceros is related to the woolly mammoth that lived during the ice age. During this time, a species called the woolly rhinoceros lived alongside woolly mammoths."
         ],
-        images: ["shorturl.at/vIJV9", "shorturl.at/vLQY5", "shorturl.at/qtOX3", "shorturl.at/abzLV", "shorturl.at/ipI36"]
+        images: ["https://rhinos.org/wp-content/uploads/2020/10/kjr_0975-1-scaled.jpg", "https://files.worldwildlife.org/wwfcmsprod/images/White_Rhino_8.7.2012_Threats_HI_102787.jpg/story_full_width/52w2h6cvfs_White_Rhino_8.7.2012_Threats_HI_102787.jpg"]
     },
     {
         name: "Brown Bear",
@@ -1101,8 +1101,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 30,
         weight: 600000,
-        body_length: 2800,
-        top_speed: 56,
+        "body-length": 2800,
+        "top-speed": 56,
         facts: [
             "The brown bear has the widest distribution of any bear, once ranging as far as Morocco, Algeria and Mexico. Today it lives in North America, Asia and Europe, and is the national animal of Finland.",
             "Brown bears have amazing endurance. They can outrun a horse and drag a dead elk up a hill!",
@@ -1116,7 +1116,7 @@ db.animals.insertMany([
             "In general, brown bears are not dangerous to humans. They do not attack others if not necessary. If given a chance and opportunity, they will move away from human proximity rather than attacking them. But in case the cubs are in danger, brown bears will attack humans without a doubt.",
             "Brown bears should not be kept as pets. They are not domestic animals and being wild, and they hardly see humans as their friends. If they are angered, then your life might be in danger."
         ],
-        images: ["shorturl.at/wABCZ", "shorturl.at/hvNZ0", "shorturl.at/irIX0", "shorturl.at/apyI1", "shorturl.at/uyHY9"]
+        images: ["https://www.euractiv.com/wp-content/uploads/sites/2/2021/07/ro-3.jpg", "https://media.4-paws.org/f/2/b/3/f2b3fc4201b0d45fcc8398cdd81298a47636a830/VIER%20PFOTEN_2013-06-14_062-3860x2670-1920x1328.jpg"]
     },
     {
         name: "American Alligator",
@@ -1127,8 +1127,8 @@ db.animals.insertMany([
         status: "abundant",
         lifespan: 50,
         weight: 230000,
-        body_length: 4600,
-        top_speed: 17,
+        "body-length": 4600,
+        "top-speed": 17,
         facts: [
             "Alligators are toothy. They have between 74 and 80 teeth in their jaws at any given time, and as teeth wear down or fall out they are replaced. An alligator can go through over 2,000 teeth in its lifetime.",
             "Alligators continue to grow throughout their lifetimes. Male American alligators average 8 to 10 feet long, while females tend to be slightly smaller. Very old males can get quite large, up to 15 feet long and weighing over 1,000 pounds.",
@@ -1141,7 +1141,7 @@ db.animals.insertMany([
             "Alligators have a variety of different calls to declare territory, signal distress, threaten competitors, and find mates. Although they have no vocal cords, alligators bellow loudly by sucking air into their lungs and blowing it out in intermittent roars. In addition to bellowing, alligators can growl, hiss, and make a cough-like sound called a chumpf.",
             "At the start of the spring breeding season, males bellow to attract females. The bellows have an infrasonic component that can cause the surface of the water around the male to ripple and dance. Other courtship rituals include head-slapping on the water's surface, snout and back rubbing, and blowing bubbles."
         ],
-        images: ["shorturl.at/etEY6", "shorturl.at/asFQR", "shorturl.at/bqtxD", "shorturl.at/bnwH6", "shorturl.at/erxN3"]
+        images: ["https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/tnc_16433572.jpg?crop=0,233,4000,2200&wid=4000&hei=2200&scl=1.0", "https://i.dailymail.co.uk/i/pix/2016/09/20/21/389ED66300000578-0-image-a-63_1474402926342.jpg"]
     },
     {
         name: "Black Salamander",
@@ -1152,8 +1152,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 30,
         weight: 200,
-        body_length: 70,
-        top_speed: 16,
+        "body-length": 70,
+        "top-speed": 16,
         facts: [
             "Salamanders, in general, do not like living in large groups. They live usually alone and only meet others during the breeding months.",
             "Little salamanders in general are called efts.",
@@ -1166,7 +1166,7 @@ db.animals.insertMany([
             "Common predators of this species are larger salamanders, snakes, and other large animals.",
             "Environments with high concentrations of chlorine are highly toxic to these salamanders."
         ],
-        images: ["shorturl.at/rJSTX", "shorturl.at/kEIT6", "shorturl.at/ltxGY", "shorturl.at/crPU1", "shorturl.at/ckpGQ"]
+        images: ["https://www.animalspot.net/wp-content/uploads/2011/09/Black-Salamander-Pictures.jpg", "https://upload.wikimedia.org/wikipedia/commons/5/57/Salamandra_atra-01-Kaernten-2008-Thomas_Huntke.jpg"]
     },
     {
         name: "Common Snapping Turtle",
@@ -1177,8 +1177,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 70,
         weight: 16000,
-        body_length: 490,
-        top_speed: 5,
+        "body-length": 490,
+        "top-speed": 5,
         facts: [
             "If given the choice between fight and flight, snapping turtles almost always distance themselves from humans. The animals spend the bulk of their lives underwater, steering clear of nearby Homo sapiens. However, problems can arise on dry land, where the reptiles are especially vulnerable. Females haul themselves ashore during nesting season (late spring to early summer). In these delicate months, people tend to prod and handle them, making bites inevitable.",
             "Common snapping turtles can clamp down with up to 656.81 newtons (N) of force, though typical bites register an average of 209 N.",
@@ -1191,7 +1191,7 @@ db.animals.insertMany([
             "Snapping turtles start the mating process once a female turtle has fully matured. A female turtle lays around 30-35 eggs and hides them under sand. The eggs hatch after a period ranging between 70-90 days. A snapping turtle baby is quite an adorable sight.",
             "Snapping turtles are not very social creatures that communicate through their leg movements while facing each other. They also have a strong sense of smell, vision, or touch that helps them find and identify their prey while on land, and they can also sense vibrations in case of water."
         ],
-        images: ["shorturl.at/diDN7", "shorturl.at/anJNW", "shorturl.at/fyENW", "shorturl.at/ioFL7", "shorturl.at/hAK35"]
+        images: ["https://www.everythingreptiles.com/wp-content/uploads/2020/05/Snapping-Turtle.jpg", "https://upload.wikimedia.org/wikipedia/commons/e/e8/Chelydra_rossignonii.jpg"]
     },
     {
         name: "Zebra",
@@ -1202,8 +1202,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 25,
         weight: 400000,
-        body_length: 1500,
-        top_speed: 65,
+        "body-length": 1500,
+        "top-speed": 65,
         facts: [
             "Zebra stripes are a form of pest control: they protect zebras from biting flies. By comparing zebras to horses, their closest living relative, scientists found that horses were bitten by flies disproportionately more often than zebras under the same conditions, leading them to conclude that those amazing stripes are more than just decoration.",
             "The striping pattern of the plains zebra varies by location; they have either black striping and a primarily white body color, or lighter, dark brown stripes overall.",
@@ -1216,7 +1216,7 @@ db.animals.insertMany([
             "Zebras can survive up to five days without drinking water.",
             "Zebras have excellent eyesight and are one of the few mammals that can see in color. However, zebras cannot see the color orange."
         ],
-        images: ["shorturl.at/sCUW6", "shorturl.at/npxC3", "shorturl.at/ezLZ8", "shorturl.at/wORU3", "shorturl.at/etxMW"]
+        images: ["https://static.onecms.io/wp-content/uploads/sites/20/2021/10/29/zebras-1.jpg", "https://upload.wikimedia.org/wikipedia/commons/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg"]
     },
     {
         name: "Red fox",
@@ -1227,8 +1227,8 @@ db.animals.insertMany([
         status: "abundant",
         lifespan: 4,
         weight: 14000,
-        body_length: 400,
-        top_speed: 50,
+        "body-length": 400,
+        "top-speed": 50,
         facts: [
             "Foxes are members of the Canidae family, which means they're related to wolves, jackals, and dogs.",
             "Unlike their relatives, foxes are not pack animals. When raising their young, they live in small families—called a “leash of foxes” or a “skulk of foxes”—in underground burrows. Otherwise, they hunt and sleep alone.",
@@ -1241,7 +1241,7 @@ db.animals.insertMany([
             "A study looking at urban foxes in London revealed something surprising: They are starting to look more like domesticated dogs. Compared to their rural relatives, London foxes have shorter snouts and smaller brains. While it's unclear why this is, the strange part is that the foxes are doing this to themselves. As evolutionary biologist Kevin Parsons explained to the BBC, “This is the result of foxes that have decided to live near people, showing these traits that make them look more like domesticated animals.”",
             "You can often hear their mating calls, which is a sharp, high-pitched shrieking/screaming noise that can sound quite terrifying."
         ],
-        images: ["shorturl.at/auEZ9", "shorturl.at/fxAQ3", "shorturl.at/vIJUY", "shorturl.at/hsxLX", "shorturl.at/dxGKS"]
+        images: ["https://cdn.britannica.com/95/206395-050-02B81B30/Red-fox-Vulpes-vulpes.jpg", "https://www.welcomewildlife.com/wp-content/uploads/2019/01/Red-fox-300-0-%C2%A9-Stanislav-Duben-Shutterstock-e1563829913951.jpg"]
     },
     {
         name: "European Hedgehog",
@@ -1252,8 +1252,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 10,
         weight: 780,
-        body_length: 240,
-        top_speed: 6,
+        "body-length": 240,
+        "top-speed": 6,
         facts: [
             "Hedgehogs are nocturnal which means that they sleep in the day and only come out at night.",
             "The ‘Hedge’ part of their name comes from where they build their nests hedges, bushes and shrubs. The ‘hog’ part comes from the small snorting/ grunting sound they make which is similar to a pig/warthog.",
@@ -1266,7 +1266,7 @@ db.animals.insertMany([
             "It is extremely rare that you will see multiple hedgehogs together in one place other than when mating, but if you do it is called an array.",
             "Hedgehogs are a gardeners’ friend. Hedgehogs have earnt this reputation because of their eating habits. Not only do they enjoy berries and fruit but the staple of their diet is made up from pests that are common in our back gardens such as beetles and caterpillars. This helps preserve the fruit and vegetables you may have growing in your gardens."
         ],
-        images: ["shorturl.at/uyCEW", "shorturl.at/imG78", "shorturl.at/oqBDG", "shorturl.at/aqxBN", "shorturl.at/jkxN1"]
+        images: ["https://www.worldlandtrust.org/wp-content/uploads/2017/07/shutterstock_118149634.jpg", "https://upload.wikimedia.org/wikipedia/commons/c/cb/Erinaceus_europaeus_%28Linnaeus%2C_1758%29.jpg"]
     },
     {
         name: "Giant Armadillo",
@@ -1277,8 +1277,8 @@ db.animals.insertMany([
         status: "endangered",
         lifespan: 15,
         weight: 33000,
-        body_length: 1000,
-        top_speed: 48,
+        "body-length": 1000,
+        "top-speed": 48,
         facts: [
             "The word 'armadillo' has Spanish origin and means 'little armored one'.",
             "The largest armadillo species has its densest living habitat in South America. They usually live near water, and they feed on termite mounds, ants, and such. They prefer areas with shrubs, bushes, and other sparse vegetation.",
@@ -1291,7 +1291,7 @@ db.animals.insertMany([
             "When this large animal is put under a serious threat, it can attack aggressively with its sharp front claws, leading to injury and diseases like rabies in humans. Although humans do not really take up the fight with this species, it is mostly dogs, cats, and rabbits that are engaged with them.",
             "Armadillos usually spend 16-18 hours in their burrows, sleeping. This means that the largest living species of the armadillo family spend most of their life, asleep, seldom stepping out of their burrows to hunt and forage for food."
         ],
-        images: ["shorturl.at/zMOTU", "shorturl.at/qKM48", "shorturl.at/qxG78", "shorturl.at/qrCR8", "shorturl.at/eCEL5"]
+        images: ["https://animalia.us-east-1.linodeobjects.com/animals/photos/full/1.25x1/tatu-canastra-4.jpg", "http://ewcl.s3.amazonaws.com/wp-content/uploads/2015/07/Giant-Armadillo.jpg"]
     },
     {
         name: "Prairie Rattlesnake",
@@ -1302,8 +1302,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 20,
         weight: 361,
-        body_length: 1650,
-        top_speed: 28,
+        "body-length": 1650,
+        "top-speed": 28,
         facts: [
             "Prairie rattlesnakes are known as viviparous, which means they give birth to their young.",
             "The prairie rattlesnake range and is found between 100 to 2700 feet in elevation. They are found in rugged, rocky regions, as well as open fields that have a high population of their prey. They can be found in the forests too as the forest debris on the ground acts as a protection for them. They are found in grasslands and chaparral with shrubs and vegetation where they can camouflage themselves while waiting for their prey. They live in burrows or pits formed in the rocks, under branches, and also in caves, crevices, or holes dug by other animals.",
@@ -1315,7 +1315,7 @@ db.animals.insertMany([
             "It is best known for the unique rings on the end of its tail that knock together and make a rattling sound. A rattle is added to the string each time the rattlesnake sheds its skin, which happens up to five times in its first summer and around one to two times a year after that. Males tend to have more rings than females.",
             "The prairie rattlesnake is not aggressive and will usually flee if given the chance."
         ],
-        images: ["shorturl.at/kuwQ3", "shorturl.at/intuS", "shorturl.at/atwQ9", "shorturl.at/rwHNV", "shorturl.at/qCUWZ"]
+        images: ["https://media.laboratoryequipment.com/m/52/article/578870.jpg", "https://www.activewild.com/wp-content/uploads/2017/07/prairie-rattlesnake-habitat.jpg"]
     },
     {
         name: "Common Toad",
@@ -1326,8 +1326,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 12,
         weight: 80,
-        body_length: 150,
-        top_speed: 8,
+        "body-length": 150,
+        "top-speed": 8,
         facts: [
             "Common toads bury themselves in lairs beneath trees, stems, and stones throughout the day. Common toads can also be challenging to detect since they like to hide in areas where they merge in with their surroundings. Since the skin of a common toad serves as a disguise, a gray toad can like to take naps of stones.",
             "Common toads live in solitude till the breeding season.",
@@ -1340,7 +1340,7 @@ db.animals.insertMany([
             "To discourage predators from consuming them, the common toad has a foul-tasting body. When they are attacked, they puff up as well.",
             "A common toad (Bufo bufo) is not the same as a common frog. The color of an amphibian's body is one of the best ways to know which one you're looking at. Toads have olive-brown, warty skin of lumps and scratches, while the common frog is smooth and shiny."
         ],
-        images: ["shorturl.at/hiBPS", "shorturl.at/ekBY0", "shorturl.at/ntD14", "shorturl.at/jlvCO", "shorturl.at/orzX1"],
+        images: ["https://www.woodlandtrust.org.uk/media/1094/common-toad-on-moss-alamy-bd2yxx-naturepix.jpg", "https://upload.wikimedia.org/wikipedia/commons/0/08/Bufo_bufo_sitting-Iric2006.jpg"],
     },
     {
         name: "Wolf",
@@ -1351,8 +1351,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 18,
         weight: 80000,
-        body_length: 1600,
-        top_speed: 60,
+        "body-length": 1600,
+        "top-speed": 60,
         facts: [
             "Once a wolf has found a mate, they tend to stay together for better or worse, through sickness and health, often until death due them part. Of course it is typically only the alpha male and female that breed, leaving the rest of the adult pack members to help rear the young and ensure their survival.",
             "In addition to a trend toward monogamy, wolves develop such strong social bonds for their family and other loved ones, they have been known to sacrifice themselves for the survival of the pack / family unit.",
@@ -1365,7 +1365,7 @@ db.animals.insertMany([
             "Wolves have only one breeding season per year – in the winter. They have their puppies in late April or early May. They have their puppies in an underground hole, or den. There are usually four to six puppies in a litter. The puppies grow up fast and are their adult size by the end of their first winter. They are grown up by the time they are two years old.",
             "A wolf which has been driven from the pack or has left of its own accord is called a lone wolf.  It avoids contact with packs and rarely howls."
         ],
-        images: ["shorturl.at/bnzDU", "shorturl.at/rPZ25", "shorturl.at/oJRW0", "shorturl.at/mCZ08", "shorturl.at/nyzKY"]
+        images: ["https://upload.wikimedia.org/wikipedia/commons/6/68/Eurasian_wolf_2.jpg", "https://cdn.the-scientist.com/assets/articleNo/68722/aImg/42031/wolf-1800x1260-l.png"]
     },
     {
         name: "Common Frog",
@@ -1376,8 +1376,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 10,
         weight: 22,
-        body_length: 130,
-        top_speed: 8,
+        "body-length": 130,
+        "top-speed": 8,
         facts: [
             "Common frogs are often found in damp places around garden ponds, among marshes, and in long grasses. All of these places are important for common frogs. They remain highly active most days, except when hibernating during winter.",
             "The common frog is known to live a solitary life except during the breeding season. These frogs live by themselves for the majority of their lives.",
@@ -1390,7 +1390,7 @@ db.animals.insertMany([
             "Common frogs develop faster in warmer climates in comparison to colder climates.",
             "They are known to change the color of their skin (either darken or lightening it) according to their surroundings, similar to chameleons."
         ],
-        images: ["shorturl.at/mszP2", "shorturl.at/imANW", "shorturl.at/ijAN0", "shorturl.at/qGNT6", "shorturl.at/nHQS8"]
+        images: ["https://animalcorner.org/wp-content/uploads/2015/02/common-frog-1.jpg", "https://www.ucl.ac.uk/news/sites/news/files/styles/large_image/public/common_frog_c_londonderry_desmond_loughery_2_cropped.jpg?itok=iFqzbP8c"]
     },
     {
         name: "Elk",
@@ -1401,8 +1401,8 @@ db.animals.insertMany([
         status: "stable",
         lifespan: 13,
         weight: 330000,
-        body_length: 2400,
-        top_speed: 64,
+        "body-length": 2400,
+        "top-speed": 64,
         facts: [
             "Male elk use their high-pitched roar, called bugling, to attract mates during their mating seasons. This loud bellowing sound is also used to advertise territories in the wintertime, and has a fundamental frequency of 2 kilohertz and higher (as a point of reference, a human child averages 0.3 kilohertz). Compared to its size, there is no vocal animal with the same abilities.",
             "Unlike some other deer species, like reindeer, only male elk have antlers. They begin growing their signature antlers in the spring, shedding them each winter. While they grow, elk antlers are covered with “velvet,” a soft layer of skin that sheds when the weather turns warm in the summer. Male elk use their antlers to compete with each other during the mating season, lowering their heads and knocking them with other males both to build strength and to win the attention of females.",
@@ -1415,7 +1415,7 @@ db.animals.insertMany([
             "The Shawnee name for elk is wapiti, which means “white rump.” Elk are connected with love and music for many Native Americans, and a well-known tribe legend credits elk with the creation of the first flute: a boy is too shy to speak to the girl he has fallen in love with. But two elk-men visit him in a dream and give him a flute, which he masters, giving him the means to communicate his feelings to the girl through music.",
             "Strange, but true: Elk can count to 10. How do we know? Scientists have noticed that when a female elk is presented with the choice between a mate with nine antler points and 10 antler points, she’ll almost always select the bull with 10 points."
         ],
-        images: ["shorturl.at/fpqwR", "shorturl.at/mACPZ", "shorturl.at/lwBCE", "shorturl.at/zKVZ5", "shorturl.at/aACJ7"]
+        images: ["https://cdn.britannica.com/03/94603-050-D74D3709/elk-American-Yellowstone-National-Park-Wyoming.jpg", "https://static01.nyt.com/images/2017/06/15/science/14tb-ELK/14tb-ELK-videoSixteenByNineJumbo1600.jpg"]
     },
 
     {
@@ -1459,7 +1459,7 @@ db.animals.insertMany([
         "body-length": 700,
         "top-speed": 60,
         "facts": ["Even though they do not hibernate during the winter, Arctic hares occasionally gather in groups in the underground burrows to keep each other warm.", "When resting, Arctic hares maintain a nearly spherical shape and typically stay in groups, but do not huddle.", "The hares eat woody plants, mosses, and lichens which they may dig through the snow to find in winter. In other seasons they eat buds, berries, leaves, roots, and bark"],
-        "images": ["https://i.pinimg.com/originals/28/70/e9/2870e9126a1da4fbcea586595b3827f0.jpg", "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/wild-arctic-hare-roberto-marchegiani.jpg"], 
+        "images": ["https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/wild-arctic-hare-roberto-marchegiani.jpg", "https://i.pinimg.com/originals/28/70/e9/2870e9126a1da4fbcea586595b3827f0.jpg"], 
     },
     {
         "name" : "Squirrel",
@@ -1747,8 +1747,8 @@ db.animals.insertMany([
         "region" : "desert",
         "type" : "reptile",
         "diet" : "omnivore",
-        "population" : 1000000,
-        "status" : "extinct",
+        "population" : 1,
+        "status" : "critically endangered",
         "lifespan" : 15,
         "weight": 510,
         "body-length": 600,
