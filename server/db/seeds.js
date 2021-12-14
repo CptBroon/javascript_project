@@ -643,8 +643,8 @@ db.animals.insertMany([
             "There are 41 different types, or species, of pythons. This makes them one of the largest families of snakes in the entire world."
         ],
         "images": [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsavL_mY8UhVmkjLYgZQM4lVgc17_ufBFkNw&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJncot_7ngUaFjAxBgLP6vdcrn-tth_QZo6Q&usqp=CAU"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJncot_7ngUaFjAxBgLP6vdcrn-tth_QZo6Q&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsavL_mY8UhVmkjLYgZQM4lVgc17_ufBFkNw&usqp=CAU"
         ]
     },
     {
@@ -1459,7 +1459,7 @@ db.animals.insertMany([
         "body-length": 700,
         "top-speed": 60,
         "facts": ["Even though they do not hibernate during the winter, Arctic hares occasionally gather in groups in the underground burrows to keep each other warm.", "When resting, Arctic hares maintain a nearly spherical shape and typically stay in groups, but do not huddle.", "The hares eat woody plants, mosses, and lichens which they may dig through the snow to find in winter. In other seasons they eat buds, berries, leaves, roots, and bark"],
-        "images": ["https://i.pinimg.com/originals/28/70/e9/2870e9126a1da4fbcea586595b3827f0.jpg", "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/wild-arctic-hare-roberto-marchegiani.jpg"], 
+        "images": ["https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/wild-arctic-hare-roberto-marchegiani.jpg", "https://i.pinimg.com/originals/28/70/e9/2870e9126a1da4fbcea586595b3827f0.jpg"], 
     },
     {
         "name" : "Squirrel",
