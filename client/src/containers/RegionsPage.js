@@ -19,7 +19,6 @@ const RegionsPage = ({allAnimals, allRegions}) => {
     }
 
     const createRegionLink = (region) => {
-        console.log(region)
         return (
             <li className="region-title">
                 <button onClick={handleFilterClick} value={region}>
@@ -49,7 +48,7 @@ const RegionsPage = ({allAnimals, allRegions}) => {
             </ul>
             {listFiltered && <div id="filtered-list">
                 <h3> List of all animals by selected region </h3>
-                <ul id="filtered-animal-list" className="flex-row">
+                <ul id="filtered-animal-list">
                     {generateRegionalAnimalList(regionalAnimals)}
                 </ul>
             </div>}
