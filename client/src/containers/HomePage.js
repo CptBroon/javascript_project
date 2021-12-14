@@ -1,5 +1,4 @@
 import Slideshow from "../components/Slideshow";
-import AnimalCard from "../components/AnimalCard";
 
 const HomePage = ({allAnimals}) => {
 
@@ -52,7 +51,11 @@ const HomePage = ({allAnimals}) => {
     }
 
     const createAnimalCard = (animal) => {
-        return <AnimalCard animal={animal}/>
+        return (
+            <li key={animal._id} className="animal-card">
+                {animal.name}
+            </li>
+        )
     }
     
     const generateRandomAnimalsGrid = () => {
