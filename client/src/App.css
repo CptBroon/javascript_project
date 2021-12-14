@@ -22,7 +22,7 @@
 
 #main-header {
   display: fixed;
-  background-color: green;
+  background-color: #007200;
   justify-content: space-between;
   padding: 2rem
 }
@@ -69,14 +69,6 @@ footer {
   gap: 2rem 2%;
   list-style: none;
   padding: 0;
-}
-
-.animal-card {
-  text-align: center;
-  background-color: red;
-  border-radius: 15px;
-  padding: 3rem;
-  text-align: center;
 }
 
 .ad {
@@ -138,8 +130,91 @@ footer {
 #region-list {
   list-style: none;
   justify-content: space-evenly;
+  padding: 0;
+}
+
+.region-title {
+  background-color: red;
+  height: 12rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.region-title > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.region-btn {
+  padding: 1rem;
+  width: 12rem;
+}
+
+.region-title > div > img {
+  width: 12rem;
 }
 
 #filtered-animal-list {
-  flex-wrap: wrap;
+  display: grid;
+  grid: auto / auto auto auto;
+  grid-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+}
+
+.animal-card {
+  text-align: center;
+  width:100%;
+  height: 22rem;
+  background-color: red;
+  border-radius: 15px;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.animal-card-image {
+  width: 80%;
+  aspect-ratio: auto;
+}
+
+.spacer {
+  height: 2rem;
+}
+
+:root {
+  --magic-number: 0.0262;
+  --content-width: 100vw;
+  --skew-padding: calc(var(--content-width) * var(--magic-number));
+}
+
+.diagonal-box {
+  padding: var(--skew-padding) 0;
+  background-image: linear-gradient(to right, #008000, #70e000, #38b000 );
+  transform: skewY(-3deg);
+}
+
+.content {
+  max-width: 70%;
+  margin: 0 auto;
+  transform: skewY(3deg);
+}
+
+#conservation {
+  padding-left: 8rem;
+}
+
+.links {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+#conservation-links {
+  list-style: none;
 }
