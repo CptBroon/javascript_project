@@ -71,14 +71,6 @@ footer {
   padding: 0;
 }
 
-.animal-card {
-  text-align: center;
-  background-color: red;
-  border-radius: 15px;
-  padding: 3rem;
-  text-align: center;
-}
-
 .ad {
   position: fixed;
   height: 100%;
@@ -138,8 +130,106 @@ footer {
 #region-list {
   list-style: none;
   justify-content: space-evenly;
+  padding: 0;
+}
+
+.region-title {
+  background-color: red;
+  height: 12rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.region-title > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.region-btn {
+  padding: 1rem;
+  width: 12rem;
+}
+
+.region-title > div > img {
+  width: 12rem;
 }
 
 #filtered-animal-list {
-  flex-wrap: wrap;
+  display: grid;
+  grid: auto / auto auto auto;
+  grid-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+}
+
+.animal-card {
+  text-align: center;
+  width:100%;
+  height: 22rem;
+  background-color: red;
+  border-radius: 15px;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.animal-card-image {
+  width: 80%;
+  aspect-ratio: auto;
+}
+
+.conservation-header {
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to top,yellowgreen, green)
+}
+
+.mission-overview {
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to bottom, green, greenyellow)
+}
+
+.conserve-rainforests {
+
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to top, ivory, green)
+}
+
+.conserve-snow {
+  text-align: center;
+  list-style: none;
+  background-image:radial-gradient(circle, ivory, paleturquoise)
+}
+
+.conserve-ocean {
+  text-align: center;
+  list-style: none;
+  background-image:radial-gradient(circle, skyblue, khaki)
+}
+.conserve-desert   {
+  text-align: center;
+  list-style: none;
+  background-image:radial-gradient(circle, khaki, lemonchiffon)
+}
+.conserve-plains {
+  text-align: center;
+  list-style: none;
+  background-image:radial-gradient(circle, khaki, ivory)
+}
+.conserve-planet {
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to bottom,palegoldenrod, lightblue)
+}
+.giftshop {
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to bottom,ivory,green)
 }
