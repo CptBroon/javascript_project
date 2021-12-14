@@ -22,7 +22,7 @@
 
 #main-header {
   display: fixed;
-  background-color: green;
+  background-color: #007200;
   justify-content: space-between;
   padding: 2rem
 }
@@ -183,53 +183,38 @@ footer {
   aspect-ratio: auto;
 }
 
-.conservation-header {
-  text-align: center;
-  list-style: none;
-  background-image:linear-gradient(to top,yellowgreen, green)
+.spacer {
+  height: 2rem;
 }
 
-.mission-overview {
-  text-align: center;
-  list-style: none;
-  background-image:linear-gradient(to bottom, green, greenyellow)
+:root {
+  --magic-number: 0.0262;
+  --content-width: 100vw;
+  --skew-padding: calc(var(--content-width) * var(--magic-number));
 }
 
-.conserve-rainforests {
-
-  text-align: center;
-  list-style: none;
-  background-image:linear-gradient(to top, ivory, green)
+.diagonal-box {
+  padding: var(--skew-padding) 0;
+  background-image: linear-gradient(to right, #008000, #70e000, #38b000 );
+  transform: skewY(-3deg);
 }
 
-.conserve-snow {
-  text-align: center;
-  list-style: none;
-  background-image:radial-gradient(circle, ivory, paleturquoise)
+.content {
+  max-width: 70%;
+  margin: 0 auto;
+  transform: skewY(3deg);
 }
 
-.conserve-ocean {
-  text-align: center;
-  list-style: none;
-  background-image:radial-gradient(circle, skyblue, khaki)
+#conservation {
+  padding-left: 8rem;
 }
-.conserve-desert   {
+
+.links {
+  margin: auto;
   text-align: center;
-  list-style: none;
-  background-image:radial-gradient(circle, khaki, lemonchiffon)
+  width: 80%;
 }
-.conserve-plains {
-  text-align: center;
+
+#conservation-links {
   list-style: none;
-  background-image:radial-gradient(circle, khaki, ivory)
-}
-.conserve-planet {
-  text-align: center;
-  list-style: none;
-  background-image:linear-gradient(to bottom,palegoldenrod, lightblue)
-}
-.giftshop {
-  text-align: center;
-  list-style: none;
-  background-image:linear-gradient(to bottom,ivory,green)
 }
