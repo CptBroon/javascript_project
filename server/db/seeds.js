@@ -1315,7 +1315,7 @@ db.animals.insertMany([
             "It is best known for the unique rings on the end of its tail that knock together and make a rattling sound. A rattle is added to the string each time the rattlesnake sheds its skin, which happens up to five times in its first summer and around one to two times a year after that. Males tend to have more rings than females.",
             "The prairie rattlesnake is not aggressive and will usually flee if given the chance."
         ],
-        images: ["https://static.wikia.nocookie.net/wildkratts/images/5/50/Prairie_Rattlesnake.PNG/revision/latest?cb=20190714191717https://media.laboratoryequipment.com/m/52/article/578870.jpg", "https://www.activewild.com/wp-content/uploads/2017/07/prairie-rattlesnake-habitat.jpg"]
+        images: ["https://media.laboratoryequipment.com/m/52/article/578870.jpg", "https://www.activewild.com/wp-content/uploads/2017/07/prairie-rattlesnake-habitat.jpg"]
     },
     {
         name: "Common Toad",
