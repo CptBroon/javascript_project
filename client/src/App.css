@@ -127,9 +127,35 @@ footer {
   font-size: larger;
 }
 
-.region-list {
+#region-list {
   list-style: none;
   justify-content: space-evenly;
+  padding: 0;
+}
+
+.region-title {
+  background-color: red;
+  height: 12rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.region-title > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.region-btn {
+  padding: 1rem;
+  width: 12rem;
+}
+
+.region-title > div > img {
+  width: 12rem;
 }
 
 #filtered-animal-list {
