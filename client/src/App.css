@@ -135,11 +135,62 @@ footer {
   font-size: larger;
 }
 
-#region-list {
+.region-list {
   list-style: none;
   justify-content: space-evenly;
 }
 
 #filtered-animal-list {
   flex-wrap: wrap;
+}
+
+.conservation-header {
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to top,yellowgreen, green)
+}
+
+.mission-overview {
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to bottom, green, greenyellow)
+}
+
+.conserve-rainforests {
+
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to top, ivory, green)
+}
+
+.conserve-snow {
+  text-align: center;
+  list-style: none;
+  background-image:radial-gradient(circle, ivory, paleturquoise)
+}
+
+.conserve-ocean {
+  text-align: center;
+  list-style: none;
+  background-image:radial-gradient(circle, skyblue, khaki)
+}
+.conserve-desert   {
+  text-align: center;
+  list-style: none;
+  background-image:radial-gradient(circle, khaki, lemonchiffon)
+}
+.conserve-plains {
+  text-align: center;
+  list-style: none;
+  background-image:radial-gradient(circle, khaki, ivory)
+}
+.conserve-planet {
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to bottom,palegoldenrod, lightblue)
+}
+.giftshop {
+  text-align: center;
+  list-style: none;
+  background-image:linear-gradient(to bottom,ivory,green)
 }
