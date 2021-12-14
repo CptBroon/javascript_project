@@ -3,7 +3,6 @@ import PageFooter from "../components/PageFooter";
 import HomePage from "./HomePage";
 import RegionsPage from "./RegionsPage";
 import ConservationPage from "./ConservationPage";
-import logo from "../img/bbc-logo.png";
 import PopupAd from "../components/PopupAd";
 import { useState, useEffect } from 'react';
 import React from "react";
@@ -47,7 +46,7 @@ const EducationalApp = () => {
                 </div>
                 <div id="main-header" className="flex-row">
                     <div id="page-logo" className="flex-row">
-                        <img id="logo" src={logo} alt="BBC"/>
+                        <img id="logo" src={"/img/bbc-logo.png"} alt="BBC"/>
                         <h2>Education App</h2>
                     </div>
                     <nav id="nav-bar">
