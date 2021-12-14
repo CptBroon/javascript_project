@@ -31,7 +31,7 @@ const EducationalApp = () => {
     }
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/animals")
+        fetch("http://localhost:5001/api/animals")
             .then(res => res.json())
             .then(data => setAllAnimals(data))
         setTimeout(() => {popUp()}, 5000);
