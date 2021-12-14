@@ -4,6 +4,7 @@ import HomePage from "./HomePage";
 import RegionsPage from "./RegionsPage";
 import ConservationPage from "./ConservationPage";
 import logo from "../img/bbc-logo.png";
+import PopupAd from "../components/PopupAd";
 import { useState, useEffect } from 'react';
 import React from "react";
 import {
@@ -17,15 +18,28 @@ const EducationalApp = () => {
 
     const [allAnimals, setAllAnimals] = useState([])
     const [allRegions, setAllRegions] = useState(["tundra", "desert", "ocean", "plains", "rainforest"])
+    const [showPopup, setShowPopup] = useState(false);
+
+    const popUp = () => {
+        if (!showPopup) {
+            setShowPopup(true);
+        }
+    }
+
+    const hidePopup = () => {
+        setShowPopup(false);
+    }
 
     useEffect(() => {
         fetch("http://localhost:5000/api/animals")
             .then(res => res.json())
             .then(data => setAllAnimals(data))
+        setTimeout(() => {popUp()}, 5000);
     }, []) 
 
     return (
         <>
+            {showPopup && <PopupAd hidePopup={hidePopup} />}
             <Router>
             <header className="flex-column">
                 <div id="top-bar">
