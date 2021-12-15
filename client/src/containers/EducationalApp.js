@@ -1,4 +1,3 @@
-import PageFooter from "../components/PageFooter";
 import HomePage from "./HomePage";
 import RegionsPage from "./RegionsPage";
 import ConservationPage from "./ConservationPage";
@@ -127,7 +126,19 @@ const EducationalApp = () => {
                 />
                 <Route path="/login" element={<LoginPage Login={Login} error={error}/>}/>
             </Routes>
-          <PageFooter />
+            <footer>
+                <ul>
+                    <li>
+                        <Link to="/home"><i className="fas fa-home"></i> Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/regions"><i className="fas fa-globe-americas"></i> Regions</Link>
+                    </li>
+                    <li>
+                        <Link to="/conservation" ><i className="fas fa-leaf"></i> Conservation</Link>
+                    </li>
+                </ul>
+            </footer>
           </Router>
         </>
       );
