@@ -1,4 +1,3 @@
-import PageHeader from "../components/PageHeader";
 import PageFooter from "../components/PageFooter";
 import HomePage from "./HomePage";
 import RegionsPage from "./RegionsPage";
@@ -12,15 +11,15 @@ import {
   Route,
   Link
 } from "react-router-dom"; 
-import AnimalProfile from "../components/AnimalProfile";
 
 const EducationalApp = () => {
 
     const [allAnimals, setAllAnimals] = useState([])
-    const [allRegions, setAllRegions] = useState(["tundra", "desert", "ocean", "plains", "rainforest"])
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedAnimal, setSelectedAnimal] = useState(null)
     const [randomAnimals, setRandomAnimals] = useState([])
+
+    const allRegions = ["tundra", "desert", "ocean", "plains", "rainforest"]
 
     const generateRandomIndex = (lengthOfArray) => {
         return Math.floor(Math.random() * lengthOfArray)
