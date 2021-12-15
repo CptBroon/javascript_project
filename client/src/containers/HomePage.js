@@ -1,7 +1,10 @@
 import Slideshow from "../components/Slideshow";
 import AnimalCard from "../components/AnimalCard";
+import AnimalProfile from "../components/AnimalProfile";
+import { useEffect } from "react";
 
-const HomePage = ({allAnimals}) => {
+
+const HomePage = ({allAnimals, randomAnimals, showModal, modalOpen, setModalOpen, selectedAnimal, setSelectedAnimal}) => {
 
     const data = [
         {
@@ -33,46 +36,28 @@ const HomePage = ({allAnimals}) => {
         fontSize: '20px',
         fontWeight: 'bold',
       }
-    
-    const generateRandomIndex = (lengthOfArray) => {
-        return Math.floor(Math.random() * lengthOfArray)
-    }
-
-    const selectRandomAnimal = (animalArray) => {
-        return animalArray[generateRandomIndex(animalArray.length)]
-    }
-
-    const generateRandomAnimalList = (numberOfAnimals, animalArray) => {
-        const randomAnimals = []
-        for (let i=0; i < numberOfAnimals; i++) {
-            const animal = selectRandomAnimal(animalArray)
-            randomAnimals.push(animal) 
-        }
-        return randomAnimals
-    }
 
     const createAnimalCard = (animal) => {
-        return <AnimalCard animal={animal}/>
-    }
-    
-    const generateRandomAnimalsGrid = () => {
-        if (allAnimals.length) {
-            const animals = generateRandomAnimalList(6, allAnimals)
-            return animals.map(createAnimalCard) 
-        }
+        return <AnimalCard animal={animal} showModal={showModal} setSelectedAnimal={setSelectedAnimal}/>
     }
 
+    const animals = randomAnimals.map(createAnimalCard)
+
     return (
+      <>
+        {/* <button }>show</button> */}
+        {selectedAnimal && <AnimalProfile animal={selectedAnimal} modalOpen={modalOpen} setModalOpen={setModalOpen}/>}
         <div className="flex-column">
             <div id="region-images-carousel">
                     <Slideshow data={data} captionStyle={captionStyle} slideNumberStyle={slideNumberStyle}/>
             </div>
             <div id="random-species-section">
                 <ul id="random-species-list">
-                    {generateRandomAnimalsGrid()}
+                    {animals}
                 </ul>
             </div>
         </div>
+      </>
     )
 }
 

@@ -1,4 +1,3 @@
-import PageHeader from "../components/PageHeader";
 import PageFooter from "../components/PageFooter";
 import HomePage from "./HomePage";
 import RegionsPage from "./RegionsPage";
@@ -17,7 +16,9 @@ import {
 const EducationalApp = () => {
 
     const [allAnimals, setAllAnimals] = useState([])
-    const [allRegions, setAllRegions] = useState(["tundra", "desert", "ocean", "plains", "rainforest"])
+    const [modalOpen, setModalOpen] = useState(false);
+    const [selectedAnimal, setSelectedAnimal] = useState(null)
+    const [randomAnimals, setRandomAnimals] = useState([])
     const [showPopup, setShowPopup] = useState(false);
     const [user, setUser] = useState({name:""})
     const [error, setError] = useState("")
@@ -41,26 +42,43 @@ const EducationalApp = () => {
         setUser({name:""})
     }
 
-    const popUp = () => {
-        if (!showPopup) {
-            setShowPopup(true);
-        }
+    const allRegions = ["tundra", "desert", "ocean", "plains", "rainforest"]
+
+    const generateRandomIndex = (lengthOfArray) => {
+        return Math.floor(Math.random() * lengthOfArray)
     }
 
-    const hidePopup = () => {
-        setShowPopup(false);
+    const selectRandomAnimal = (animalArray) => {
+        return animalArray[generateRandomIndex(animalArray.length)]
+    }
+
+    const generateRandomAnimalList = (numberOfAnimals, animalArray) => {
+        const randomAnimals = []
+        for (let i=0; i < numberOfAnimals; i++) {
+            const animal = selectRandomAnimal(animalArray)
+            randomAnimals.push(animal) 
+        }
+        return randomAnimals
     }
 
     useEffect(() => {
         fetch("http://localhost:5000/api/animals")
             .then(res => res.json())
-            .then(data => setAllAnimals(data))
-        setTimeout(() => {popUp()}, 5000);
+            .then(data => {
+                setAllAnimals(data)
+                return data
+            })
+            .then(data => setRandomAnimals(generateRandomAnimalList(6, data)))
     }, []) 
+
+    
+
+    const showModal = () => {
+        setModalOpen(true);
+    }
 
     return (
         <>
-            {showPopup && <PopupAd hidePopup={hidePopup} />}
             <Router>
             <header className="flex-column">
                 <div id="top-bar">
@@ -95,9 +113,18 @@ const EducationalApp = () => {
                 </div>
             </header>
             <Routes>
-                <Route path="/home" element={<HomePage allAnimals={allAnimals}/>}/>
-                <Route path="/regions" element={<RegionsPage allRegions={allRegions} allAnimals={allAnimals}/>}/>
-                <Route path="/conservation" element={<ConservationPage/>}/>
+                <Route 
+                    path="/home" 
+                    element={<HomePage allAnimals={allAnimals} randomAnimals={randomAnimals} showModal={showModal} modalOpen={modalOpen} setModalOpen={setModalOpen} selectedAnimal={selectedAnimal} setSelectedAnimal={setSelectedAnimal}/>}
+                />
+                <Route 
+                    path="/regions" 
+                    element={<RegionsPage allRegions={allRegions} allAnimals={allAnimals} showModal={showModal} modalOpen={modalOpen} setModalOpen={setModalOpen} selectedAnimal={selectedAnimal} setSelectedAnimal={setSelectedAnimal}/>}
+                />
+                <Route 
+                    path="/conservation" 
+                    element={<ConservationPage/>}
+                />
                 <Route path="/login" element={<LoginPage Login={Login} error={error}/>}/>
             </Routes>
           <PageFooter />

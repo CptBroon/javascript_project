@@ -10,7 +10,7 @@ const Slideshow = ({data, captionStyle, slideNumberStyle}) => {
                         height="500px"
                         captionStyle={captionStyle}
                         radius="10px"
-                        slideNumber={true}
+                        slideNumber={false}
                         slideNumberStyle={slideNumberStyle}
                         captionPosition="bottom"
                         automatic={true}

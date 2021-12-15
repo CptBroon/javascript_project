@@ -219,21 +219,45 @@ footer {
   list-style: none;
 }
 
+
+/* Animal profile */
+
+#image-container {
+  width: 100%
+}
+
+#animal-profile-image {
+  width: 50%;
+  margin-left: 25%
+}
+
+#animal-profile-name {
+  font-size: 24pt;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 50%
+}
+
 .login-form {
   margin-top: 6rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  
 }
+  
 .login-input {
   margin: 1rem;
   width: 15rem;
   align-items: center;
 }
+  
 .login-list {
   list-style-type: none;
 }
+  
 #login-bttn {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -245,9 +269,11 @@ footer {
   border-radius: 15px;
   font-weight: bold;
 }
+  
 #login-bttn:hover {
   background-color: rgb(136, 212, 22);
 }
+  
 #logout-bttn {
   padding: 0.5rem;
   margin: 0.5rem;
@@ -256,6 +282,7 @@ footer {
   border-radius: 15px;
   font-weight: bold;
 }
+  
 .error {
   background-color: orangered;
   color: white;

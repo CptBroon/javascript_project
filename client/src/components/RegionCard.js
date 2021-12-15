@@ -12,6 +12,8 @@ const RegionCard = ({region, listFiltered, setListFiltered, allAnimals, setFilte
                 return "/img/rainforest.jpeg"
             case "tundra":
                 return "/img/tundra.jpeg"
+            default:
+                return "hi"
         }
     }
 
