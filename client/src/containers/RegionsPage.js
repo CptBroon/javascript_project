@@ -23,7 +23,8 @@ const RegionsPage = ({allRegions, allAnimals, showModal, modalOpen, setModalOpen
     return (
         <>
             {selectedAnimal && <AnimalProfile animal={selectedAnimal} modalOpen={modalOpen} setModalOpen={setModalOpen}/>}
-            <h1> Regions </h1>
+            <div className="spacer"/>
+            <h1 className="title"> REGIONS </h1>
             <ul id="region-list" className="flex-row">
                 {generateRegionList(allRegions)}
             </ul>

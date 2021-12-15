@@ -10,6 +10,10 @@ const AnimalProfile = ({animal, modalOpen, setModalOpen}) => {
         return animal.facts.map(fact => <li>{fact}</li>)
     }
 
+    const capitalizeString = (string) => {
+        return string[0].toUpperCase() + string.slice(1)
+    }
+
     return (
         <ReactModal
             isOpen= {modalOpen}
@@ -23,37 +27,38 @@ const AnimalProfile = ({animal, modalOpen, setModalOpen}) => {
                     <img id="animal-profile-image" src={animal.images[0]}></img>
                 </div>
                 <h3 id="animal-profile-name">{animal.name}</h3>
+                <div className="spacer"/>
                 <div className="animal-profile-left column">
                     <div>
-                        <h4>Stats</h4>
+                        <h3>Stats</h3>
                         <table>
                             <tbody>
                                 <tr>
-                                    <td>
+                                    <td className="left-column">
                                         Region
                                     </td>
                                     <td>
-                                        {animal.region}
+                                        {capitalizeString(animal.region)}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td className="left-column">
                                         Class
                                     </td>
                                     <td>
-                                        {animal.type}
+                                        {capitalizeString(animal.type)}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td className="left-column">
                                         Diet
                                     </td>
                                     <td>
-                                        {animal.diet}
+                                        {capitalizeString(animal.diet)}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td className="left-column">
                                         Population
                                     </td>
                                     <td>
@@ -61,40 +66,40 @@ const AnimalProfile = ({animal, modalOpen, setModalOpen}) => {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td className="left-column">
                                         Status 
                                     </td>
                                     <td>
-                                        {animal.status}
+                                        {capitalizeString(animal.status)}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        Lifespan 
+                                    <td className="left-column">
+                                        Lifespan (years)
                                     </td>
                                     <td>
                                         {animal.lifespan}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        Average weight 
+                                    <td className="left-column">
+                                        Average weight (g)
                                     </td>
                                     <td>
                                         {animal.weight}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        Average length
+                                    <td className="left-column">
+                                        Average length (mm)
                                     </td>
                                     <td>
                                         {animal["body-length"]}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        Top speed
+                                    <td className="left-column">
+                                        Top speed (km/h)
                                     </td>
                                     <td>
                                         {animal["top-speed"]}
@@ -106,8 +111,8 @@ const AnimalProfile = ({animal, modalOpen, setModalOpen}) => {
                 </div>
                 <div className="animal-profile-right column">
                     <div>
-                        <h4>facts</h4>
-                        <ul>
+                        <h3>Facts</h3>
+                        <ul id="facts-list">
                             {animalFacts(animal)}
                         </ul>
                     </div>

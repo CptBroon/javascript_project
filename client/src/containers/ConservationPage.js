@@ -3,7 +3,7 @@ const ConservationPage = () => {
 
     <div>
         <div className="spacer"/>
-        <h1 id="conservation"> CONSERVATION </h1>
+        <h1 className="title"> CONSERVATION </h1>
         <div className="spacer"/>
         
         <div className="diagonal-box para1">

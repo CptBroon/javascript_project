@@ -18,7 +18,7 @@ const EducationalApp = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedAnimal, setSelectedAnimal] = useState(null)
     const [randomAnimals, setRandomAnimals] = useState([])
-    const [showPopup, setShowPopup] = useState(false);
+    const [popupStatus, setPopupStatus] = useState(false);
     const [user, setUser] = useState({name:""})
     const [error, setError] = useState("")
 
@@ -34,7 +34,6 @@ const EducationalApp = () => {
         } else {
             setError("Details do not match")
         }
-
     }
 
     const Logout = () => {
@@ -60,6 +59,10 @@ const EducationalApp = () => {
         return randomAnimals
     }
 
+    const showPopup = () => {
+        setPopupStatus(true)
+    }
+
     useEffect(() => {
         fetch("http://localhost:5000/api/animals")
             .then(res => res.json())
@@ -68,16 +71,16 @@ const EducationalApp = () => {
                 return data
             })
             .then(data => setRandomAnimals(generateRandomAnimalList(6, data)))
+        setTimeout(showPopup, 5000)
     }, []) 
 
-    
-
     const showModal = () => {
-        setModalOpen(true);
+        setModalOpen(true)
     }
 
     return (
         <>
+            {popupStatus && <PopupAd popupStatus={popupStatus} setPopupStatus={setPopupStatus} />}
             <Router>
             <header className="flex-column">
                 <div id="top-bar">
@@ -88,7 +91,7 @@ const EducationalApp = () => {
                             </p> 
                         </div>
                     ) : (
-                        <Link to="/login"><i className="fas fa-sign-in-alt"></i> Log In</Link>
+                        <Link to="/login" style={{paddingRight: "3rem"}}><i className="fas fa-sign-in-alt"></i> Log In</Link>
                     )}
                 </div>
                 <div id="main-header" className="flex-row">
@@ -127,15 +130,15 @@ const EducationalApp = () => {
                 <Route path="/login" element={<LoginPage Login={Login} error={error}/>}/>
             </Routes>
             <footer>
-                <ul>
+                <ul id="sitemap">
                     <li>
-                        <Link to="/home"><i className="fas fa-home"></i> Home</Link>
+                        <Link to="/home" style={{color : "white", textDecoration: "none"}}>Home</Link>
                     </li>
                     <li>
-                        <Link to="/regions"><i className="fas fa-globe-americas"></i> Regions</Link>
+                        <Link to="/regions" style={{color : "white", textDecoration: "none"}}>Regions</Link>
                     </li>
                     <li>
-                        <Link to="/conservation" ><i className="fas fa-leaf"></i> Conservation</Link>
+                        <Link to="/conservation" style={{color : "white", textDecoration: "none"}} >Conservation</Link>
                     </li>
                 </ul>
             </footer>
