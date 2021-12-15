@@ -218,3 +218,24 @@ footer {
 #conservation-links {
   list-style: none;
 }
+
+/* Animal profile */
+
+#image-container {
+  width: 100%
+}
+
+#animal-profile-image {
+  width: 50%;
+  margin-left: 25%
+}
+
+#animal-profile-name {
+  font-size: 24pt;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 50%
+}
