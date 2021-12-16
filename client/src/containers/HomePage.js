@@ -1,8 +1,6 @@
 import Slideshow from "../components/Slideshow";
 import AnimalCard from "../components/AnimalCard";
 import AnimalProfile from "../components/AnimalProfile";
-import { useEffect } from "react";
-
 
 const HomePage = ({allAnimals, randomAnimals, showModal, modalOpen, setModalOpen, selectedAnimal, setSelectedAnimal}) => {
 
@@ -45,7 +43,6 @@ const HomePage = ({allAnimals, randomAnimals, showModal, modalOpen, setModalOpen
 
     return (
       <>
-        {/* <button }>show</button> */}
         {selectedAnimal && <AnimalProfile animal={selectedAnimal} modalOpen={modalOpen} setModalOpen={setModalOpen}/>}
         <div className="flex-column">
             <div id="region-images-carousel">

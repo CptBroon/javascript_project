@@ -29,7 +29,7 @@ const EducationalApp = () => {
 
     const Login = (details) => {
 
-        if (details.name == adminUser.name && details.password == adminUser.password) {
+        if (details.name === adminUser.name && details.password === adminUser.password) {
             setUser({name:details.name})
         } else {
             setError("Details do not match")
@@ -71,7 +71,7 @@ const EducationalApp = () => {
                 return data
             })
             .then(data => setRandomAnimals(generateRandomAnimalList(6, data)))
-        setTimeout(showPopup, 5000)
+        setTimeout(showPopup, 10000)
     }, []) 
 
     const showModal = () => {
@@ -84,7 +84,7 @@ const EducationalApp = () => {
             <Router>
             <header className="flex-column">
                 <div id="top-bar">
-                {(user.name != "") ? (
+                {(user.name !== "") ? (
                         <div className ="welcome">
                             <p>Welcome, <span>{user.name}</span>
                             <button onClick={Logout} id="logout-bttn">Log Out</button>

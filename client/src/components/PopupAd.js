@@ -27,7 +27,7 @@ const PopupAd = ({popupStatus, setPopupStatus}) => {
         >
             <>
                 <div id="ros-logo-container">
-                    <img id="ros-logo" src={"/img/ros-logo.png"}/>
+                    <img id="ros-logo" src={"/img/ros-logo.png"} alt=""/>
                 </div>
                 <div id="popup-text">
                     <h2>PROPERTY IN SCOTLAND??</h2>

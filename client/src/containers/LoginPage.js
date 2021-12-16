@@ -10,7 +10,7 @@ const LoginPage = ({Login, error}) => {
     async function submitHandler(e) {
         e.preventDefault();
         Login(details);
-        if (details.name == "Almas" && details.password == "admin123") {
+        if (details.name === "Almas" && details.password === "admin123") {
             navigate("/home")
         }
     }
@@ -21,7 +21,7 @@ const LoginPage = ({Login, error}) => {
         <>
         <form className="login-form" onSubmit={submitHandler}>
             <h3>Please Log In</h3>
-            {(error !="") ? (<div className="error">{error}</div>) : ""}
+            {(error !=="") ? (<div className="error">{error}</div>) : ""}
             <ul className="login-list">
                 <li><label htmlFor="name">Your Username</label>
                 <input className="login-input" type="text" name="name" id="name" onChange={e => setDetails({...details, name:e.target.value})} value={details.name} required autofocus></input></li>

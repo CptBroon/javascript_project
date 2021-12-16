@@ -24,7 +24,7 @@ const AnimalProfile = ({animal, modalOpen, setModalOpen}) => {
             <div className="modal-content">
                 <button className="close-btn" onClick={handleModalClose}>x</button>
                 <div id="image-container">
-                    <img id="animal-profile-image" src={animal.images[0]}></img>
+                    <img id="animal-profile-image" src={animal.images[0]} alt=""></img>
                 </div>
                 <h3 id="animal-profile-name">{animal.name}</h3>
                 <div className="spacer"/>
